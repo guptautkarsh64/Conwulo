@@ -30,7 +30,7 @@ export default function SignIn() {
           </button>
         </form>
         <div className="mt-4 text-center text-sm text-gray-300">
-          Don't have an account? <a href="#" className="text-purple-400 hover:underline">Sign up</a>
+          Don&apos;t have an account? <a href="#" className="text-purple-400 hover:underline">Sign up</a>
         </div>
       </div>
     </div>

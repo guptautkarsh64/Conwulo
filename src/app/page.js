@@ -1,20 +1,23 @@
+'use client';
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-[#1a002d] to-black text-white">
       <nav className="flex justify-between items-center px-8 py-4">
         <div className="text-purple-500 text-lg font-bold">Conwulo</div>
         <ul className="flex gap-6 text-sm">
-          <li><a href="/" className="font-semibold text-white">Home</a></li>
-          <li><a href="/upload">Upload</a></li>
-          <li><a href="/options">Options</a></li>
-          <li><a href="/routine">Routine</a></li> {/* ✅ Fixed this line */}
+          <li><Link href="/" className="font-semibold text-white">Home</Link></li>
+          <li><Link href="/upload">Upload</Link></li>
+          <li><Link href="/options">Options</Link></li>
+          <li><Link href="/routine">Routine</Link></li>
         </ul>
-        <a
+        <Link
           href="/signin"
           className="bg-white text-black px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-200"
         >
           Sign In
-        </a>
+        </Link>
       </nav>
 
       <div className="flex flex-col items-center justify-center text-center px-4 mt-24">
