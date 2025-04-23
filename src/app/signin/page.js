@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function SignIn() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-black flex items-center justify-center px-4">
@@ -34,7 +36,10 @@ export default function SignIn() {
           </button>
         </form>
         <div className="mt-4 text-center text-sm text-gray-300">
-          Don&apos;t have an account? <a href="#" className="text-purple-400 hover:underline">Sign up</a>
+          Don&apos;t have an account?{' '}
+          <Link href="/signup" className="text-purple-400 hover:underline">
+            Sign up
+          </Link>
         </div>
       </div>
     </div>
